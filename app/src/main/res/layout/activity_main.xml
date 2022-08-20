@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mainActivityTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_title"
+            android:padding="20dp"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/name_hint"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/email_hint"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/phone_hint"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/homePhoneRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home_phone"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/commercialPhoneRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/commercial_phone"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/mobilePhoneCb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_has_mobile_phone"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:id="@+id/mobilePhoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/mobile_phone_hint"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:importantForAutofill="no"
+            android:visibility="gone"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/femaleRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/female"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/maleRb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/birthDateEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/birth_date"
+            android:textSize="20sp"
+            android:inputType="date"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/educationLabelTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/education"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/educationSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/education_array"
+            android:padding="20dp"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/conclusionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/conclusion"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:visibility="visible"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/institutionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/institution"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:visibility="gone"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/monographTitleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/monograph_title"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:visibility="gone"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/advisorEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            android:hint="@string/advisor"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:visibility="gone"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/saveBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_margin="10dp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/clearBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:layout_margin="10dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
