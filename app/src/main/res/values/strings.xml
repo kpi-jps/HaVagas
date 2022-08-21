@@ -18,6 +18,7 @@
     <string name="advisor">Orientador</string>
     <string name="save">Salvar</string>
     <string name="clear">Limpar</string>
+    <string name="check_email">Deseja receber e-mails com atualizações de oportunidades?</string>
     <string-array name="education_array">
         <item>Ensino Fundamental</item>
         <item>Ensino Médio</item>
