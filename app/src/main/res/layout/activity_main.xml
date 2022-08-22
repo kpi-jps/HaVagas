@@ -152,7 +152,6 @@
             android:hint="@string/birth_date"
             android:textSize="20sp"
             android:inputType="date"
-            android:enabled="false"
             android:importantForAutofill="no" />
 
         <TextView
@@ -188,7 +187,7 @@
             android:id="@+id/institutionEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:phonepadding="10dp"
+            android:padding="10dp"
             android:layout_margin="5dp"
             android:minHeight="48dp"
             android:hint="@string/institution"
